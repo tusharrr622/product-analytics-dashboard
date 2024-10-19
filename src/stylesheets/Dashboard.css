@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+.logout {
+    width: 20%;
+    padding: 12px;
+    background-color: #5e72e4;
+    border: none;
+    color: white;
+    font-size: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 15px;
+    transition: background-color 0.3s ease;
+}
+
+.logout:hover {
+    background-color: #324cdd;
+}
+
+.dasboard-header {
+    margin-bottom: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.dasboard-header h1 {
+    margin-top: 40px;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 900;
+    font-style: normal;
+}
+
+
+
+
+
+
+

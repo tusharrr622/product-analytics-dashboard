@@ -1,0 +1,360 @@
+ .combined-chart-container {
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     padding: 20px;
+     max-width: 1200px;
+     margin: auto;
+ }
+
+ .filter-container {
+     display: flex;
+     flex-direction: column;
+     margin-bottom: 20px;
+     width: 100%;
+     padding: 0 20px;
+ }
+
+ .filter-container label {
+     color: #333;
+     font-family: "Montserrat", sans-serif;
+     font-weight: 500;
+ }
+
+
+ .filter-container select {
+     appearance: none;
+     -webkit-appearance: none;
+     -moz-appearance: none;
+     background-color: #f9f9f9;
+     border: 1px solid #ccc;
+     border-radius: 8px;
+     padding: 8px 32px 8px 12px;
+     font-size: 14px;
+     color: #333;
+     cursor: pointer;
+     outline: none;
+     transition: border 0.3s ease;
+ }
+
+
+ .filter-group {
+     display: flex;
+     justify-content: space-between;
+     margin-bottom: 15px;
+ }
+
+ .preferences {
+     width: 20%;
+     padding: 12px;
+     background-color: #5e72e4;
+     border: none;
+     color: white;
+     font-size: 14px;
+     border-radius: 5px;
+     cursor: pointer;
+     margin-top: 15px;
+     transition: background-color 0.3s ease;
+     margin-left: 10px;
+ }
+
+ .preferences:hover {
+     background-color: #324cdd;
+ }
+
+
+ .react-datepicker-wrapper {
+     width: auto;
+ }
+
+ .react-datepicker__input-container input {
+     padding: 8px 12px;
+     background-color: #f9f9f9;
+     border: 1px solid #ccc;
+     border-radius: 4px;
+     font-size: 14px;
+     cursor: pointer;
+     transition: border-color 0.3s ease;
+ }
+
+ .react-datepicker__input-container input:hover {
+     border-color: #007bff;
+ }
+
+ .react-datepicker__input-container input:focus {
+     outline: none;
+     border-color: #007bff;
+     box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.25);
+ }
+
+
+
+
+ .react-datepicker__header {
+     background-color: #007bff;
+     color: white;
+     padding: 12px;
+     border-bottom: 1px solid #ddd;
+ }
+
+ .react-datepicker__current-month {
+     font-weight: bold;
+     font-size: 16px;
+ }
+
+ .react-datepicker__navigation--previous {
+     border-right-color: white;
+     /* Custom arrow color */
+ }
+
+ .react-datepicker__navigation--next {
+     border-left-color: white;
+     /* Custom arrow color */
+ }
+
+ /* Calendar days grid */
+ .react-datepicker__month {
+     margin: 10px;
+ }
+
+ .react-datepicker__day-name {
+     color: #555;
+     font-weight: bold;
+     padding: 10px 0;
+     font-size: 14px;
+ }
+
+ .react-datepicker__day {
+     color: #333;
+     padding: 8px;
+     border-radius: 4px;
+     transition: background-color 0.3s ease, color 0.3s ease;
+ }
+
+ /* Days on hover */
+ .react-datepicker__day:hover {
+     background-color: #e9ecef;
+     cursor: pointer;
+ }
+
+ /* Selected day */
+ .react-datepicker__day--selected {
+     background-color: #007bff;
+     color: white;
+     font-weight: bold;
+ }
+
+ /* Today’s date */
+ .react-datepicker__day--today {
+     border: 1px solid #007bff;
+     font-weight: bold;
+ }
+
+ /* Disabled days */
+ .react-datepicker__day--disabled {
+     color: #ccc;
+     pointer-events: none;
+ }
+
+ /* Weekend days */
+ .react-datepicker__day--weekend {
+     color: #dc3545;
+ }
+
+ /* Custom footer (if used) */
+ .react-datepicker__footer {
+     padding: 10px;
+     background-color: #f9f9f9;
+     border-top: 1px solid #ddd;
+     text-align: center;
+ }
+
+
+ .charts-container {
+     display: flex;
+     flex-direction: row;
+     justify-content: space-between;
+     width: 100%;
+     flex-wrap: wrap;
+     margin-top: 20px;
+ }
+
+ .chart-container {
+     flex: 1;
+     min-width: 300px;
+     margin: 0 10px;
+     height: 400px;
+ }
+
+
+/* Responsive Design */
+ @media (max-width: 1024px) {
+     body {
+         display: contents;
+         justify-content: center;
+         align-items: center;
+         background-color: #f5f5f5;
+         overflow-x: auto;
+         overflow-y: auto;
+     }
+
+     .filter-group {
+         flex-direction: column;
+         align-items: flex-start;
+         gap: 10px;
+     }
+
+     .charts-container {
+         flex-direction: column;
+         align-items: center;
+     }
+
+     .chart-container {
+         margin-bottom: 20px;
+         width: 100%;
+     }
+ }
+
+
+
+
+
+
+ @media (max-width: 912px) {
+     body {
+         display: inline-block;
+         justify-content: center;
+         align-items: center;
+         background-color: #f5f5f5;
+         overflow-x: auto;
+         overflow-y: auto;
+     }
+
+     .filter-group {
+         flex-direction: column;
+         align-items: flex-start;
+         gap: 10px;
+     }
+
+     .charts-container {
+         flex-direction: column;
+         align-items: center;
+     }
+
+     .chart-container {
+         margin-bottom: 20px;
+         width: 100%;
+
+     }
+ }
+
+
+ @media (max-width: 768px) {
+     body {
+         display: inline-block;
+         justify-content: center;
+         align-items: center;
+         background-color: #f5f5f5;
+         overflow-x: auto;
+         overflow-y: auto;
+     }
+
+     .filter-group {
+         flex-direction: column;
+         align-items: flex-start;
+         gap: 10px;
+     }
+
+     .charts-container {
+         flex-direction: column;
+         align-items: center;
+     }
+
+     .chart-container {
+         margin-bottom: 20px;
+         width: 100%;
+
+     }
+ }
+
+
+ @media (max-width: 576px) {
+     .filter-group {
+         flex-direction: column;
+         align-items: center;
+         width: 100%;
+         gap: 15px;
+     }
+
+     .charts-container {
+         flex-direction: column;
+         align-items: center;
+         width: 100%;
+     }
+
+     .chart-container {
+         width: 100%;
+         height: auto;
+         margin-bottom: 15px;
+     }
+
+     .filter-container {
+         width: 100%;
+         padding: 0 10px;
+     }
+ }
+
+ @media (max-width: 375px) {
+     .filter-group {
+         flex-direction: column;
+         align-items: center;
+         gap: 10px;
+     }
+
+     .filter-container {
+         padding: 0 5px;
+     }
+
+     .charts-container {
+         flex-direction: column;
+         align-items: center;
+         margin-top: 10px;
+     }
+
+     .chart-container {
+         width: 100%;
+         margin: 0;
+         height: 300px;
+
+     }
+ }
+
+
+ @media (max-width: 320px) {
+     .filter-group {
+         flex-direction: column;
+         align-items: center;
+         gap: 8px;
+     }
+
+     .filter-container {
+         padding: 0 5px;
+         width: 100%;
+         width: 100%;
+         max-width: 1200px;
+         margin: 0 auto;
+     }
+
+     .charts-container {
+         display: flex;
+         flex-direction: row;
+         flex-wrap: wrap;
+         width: 100%;
+
+     }
+
+     .chart-container {
+         width: 100%;
+         height: auto;
+     }
+ }
